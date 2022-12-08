@@ -1,14 +1,15 @@
-   function prime(num){
-       let count=0;
-       for(let i=1;i<=num;i++){
-           if(num%i==0){
-               count++;
+   function prime(number){
+       let counter=0;
+       for(let i=1;i<=number;i++){
+           if(number%i==0){
+               counter++;
            }
        }
-       if(count==2){
-           return true;
+       if(counter==2){
+           return (number,"is prime");
        }else{
-           return false;
+           return (number,"not a prime");
        }
    }
-console.log(prime(13));//output
+let number=13;
+console.log(prime(number));//output
