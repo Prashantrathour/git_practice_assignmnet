@@ -1,13 +1,14 @@
    function prime(num){
        let count=0;
-       for(let i=i;i<=num;i++){
+       for(let i=1;i<=num;i++){
            if(num%i==0){
-               count++
+               count++;
            }
        }
-       if(count==0){
+       if(count==2){
            return true;
        }else{
            return false;
        }
    }
+console.log(prime(13));//output
